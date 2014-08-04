@@ -1,0 +1,26 @@
+[options]
+#print debugging output
+verbose    = true
+#underline checked lines
+underline  = false
+#output in one column
+onecolumn  = true
+#check all lines initially
+initial    = false
+#show checkbox
+checkbox   = false
+#show numbers of lines
+numbers    = false
+#enable color
+color      = true
+#only one line can be checked
+radiobox   = false
+#do not skip white lines
+whitelines = false
+#draw attributes till the end of line
+fullattr   = true
+#foreground color to use to highlight
+foreground = default
+#background color to use to highlight
+background = cyan
+# vim: ft=cfg
