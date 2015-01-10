@@ -36,6 +36,8 @@ void _warn(gint line, const gchar *fct, const gchar *fmt, ...)
     g_fprintf(stderr, "\n");
 }
 
+#include <string.h>
+#include <wchar.h>
 glong g_utf8_strwidth(char* p)
 {
     gunichar c;
