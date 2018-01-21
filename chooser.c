@@ -41,9 +41,9 @@ static void adjust_channel_encoding(GIOChannel* channel, const gchar* name, gboo
         g_get_charset(&charset);
     else
         charset = NULL;
-        status = g_io_channel_set_encoding(channel, charset, NULL);
-        if (status != G_IO_STATUS_NORMAL)
-            fatal("can't set encoding `%s' for `%s'", charset == NULL? "binary" : charset, name);
+    status = g_io_channel_set_encoding(channel, charset, NULL);
+    if (status != G_IO_STATUS_NORMAL)
+        fatal("can't set encoding `%s' for `%s'", charset == NULL? "binary" : charset, name);
 }
 
 static void read_channel(GIOChannel* reader, const gchar* name)
