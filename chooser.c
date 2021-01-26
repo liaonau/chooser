@@ -8,6 +8,11 @@
 #include <stdlib.h>
 #include <string.h>
 
+GPtrArray* strings;
+guint max_string_width;
+conf_t conf;
+view_t view;
+
 #define CHAR_VT 0x000bu
 
 inline static void reopen_std_streams(void)

@@ -40,4 +40,5 @@ install:
 	install -m 644 config/* $(CONFIGDIR)
 
 uninstall:
-	rm -rf $(INSTALLDIR)/bin/chooser
+	rm -f $(INSTALLDIR)/bin/chooser
+	rm -rf $(CONFIGDIR)

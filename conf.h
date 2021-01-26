@@ -60,10 +60,10 @@ typedef struct
 } view_t;
 
 
-GPtrArray* strings;
+extern GPtrArray* strings;
 #define SL strings->len
 
-guint max_string_width;
+extern guint max_string_width;
 
-conf_t conf;
-view_t view;
+extern conf_t conf;
+extern view_t view;
