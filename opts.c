@@ -86,7 +86,7 @@ inline static void loadconf()
     }
 
     g_key_file_free(key_file);
-    g_strfreev(paths);
+    g_free(paths);
     g_free(fullpath);
 }
 

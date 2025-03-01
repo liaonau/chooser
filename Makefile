@@ -1,7 +1,7 @@
 PKGS      = glib-2.0 ncursesw
 
 INCS     := $(shell pkg-config --cflags $(PKGS)) -I./
-CFLAGS   := -std=gnu99 -ggdb -W -Wall -Wextra $(INCS) $(CFLAGS)
+CFLAGS   := -std=gnu23 -ggdb -W -Wall -Wextra $(INCS) $(CFLAGS)
 
 LIBS     := $(shell pkg-config --libs $(PKGS)) -lreadline
 LDFLAGS  := $(LIBS) $(LDFLAGS) -Wl,--export-dynamic

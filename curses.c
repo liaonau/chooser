@@ -484,7 +484,7 @@ static void perform_search(GRegexCompileFlags compile_options)
     reset_shell_mode();
     curs_set(true);
     prompt.on = true;
-    rl_callback_handler_install("", cb_search);
+    rl_callback_handler_install("", (void (*)(char *)) cb_search);
     def_shell_mode();
     gchar* search_method = (compile_options & G_REGEX_CASELESS) ? "Ignore Case " : "";
     redraw_search_line(search_method);
